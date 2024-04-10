@@ -128,6 +128,8 @@
   <ItemGroup>
     <ClCompile Include="7zHelper.cpp" />
     <ClCompile Include="7zHelperTest.cpp" />
+    <ClCompile Include="CompressUpdateCB.cpp" />
+    <ClCompile Include="CompressUpdateCB.h" />
     <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zCompressionMode.cpp" />
     <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zDecode.cpp" />
     <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zEncode.cpp" />

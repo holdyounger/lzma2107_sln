@@ -2382,7 +2382,6 @@ HRESULT Update(
       UInt64 curFolderUnpackSize = totalSize;
       // curFolderUnpackSize = (UInt64)(Int64)-1;
       
-#if 0
       RINOK(encoder.Encode(
           EXTERNAL_CODECS_LOC_VARS
           solidInStream,
@@ -2390,13 +2389,7 @@ HRESULT Update(
           &inSizeForReduce,
           newDatabase.Folders.AddNew(), newDatabase.CoderUnpackSizes, curFolderUnpackSize,
           archive.SeqStream, newDatabase.PackSizes, progress));
-#endif // 0
 
-
-      { int __result__ = (encoder.Encode(solidInStream, &inSizeForReduce, newDatabase.Folders.AddNew(), newDatabase.CoderUnpackSizes, curFolderUnpackSize, archive.SeqStream, newDatabase.PackSizes, progress)); 
-      if (__result__ != 0) 
-          return __result__; 
-      }
 
       if (!inStreamSpec->WasFinished())
         return E_FAIL;

@@ -675,6 +675,12 @@
     <ClCompile Include="lzma2107\C\HuffEnc.c">
       <Filter>lzma2107\C</Filter>
     </ClCompile>
+    <ClCompile Include="CompressUpdateCB.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressUpdateCB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="7zHelper.h">
